@@ -62,7 +62,7 @@
       "MESSAGE_ERROR": "Please write a message of at least 10 characters",
       "SEND": "Send Message",
       "SENDING": "Sending...",
-      "SUCCESS": "Message sent successfully! I'll get back to you soon. ✨",
+      "SUCCESS": "Message sent successfully! <br> I'll get back to you soon.",
       "ERROR": "Send error. Please try again later or email me directly at lucagarizio.devs@gmail.com"
     }
   },

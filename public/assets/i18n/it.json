@@ -62,7 +62,7 @@
       "MESSAGE_ERROR": "Scrivi un messaggio di almeno 10 caratteri",
       "SEND": "Invia Messaggio",
       "SENDING": "Inviando...",
-      "SUCCESS": "Messaggio inviato con successo! Ti risponderò al più presto",
+      "SUCCESS": "Messaggio inviato con successo! <br> Ti risponderò al più presto",
       "ERROR": "Errore nell'invio. Riprova più tardi o scrivimi direttamente a lucagarizio.devs@gmail.com"
     }
   },
