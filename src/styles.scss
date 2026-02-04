@@ -84,14 +84,7 @@ html {
   }
 }
 
-@keyframes scroll-hint {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(300%); }
-}
 
-.animate-scroll-hint {
-  animation: scroll-hint 3s ease-in-out infinite;
-}
 
 .show-only-desktop-nav {
   display: none !important;

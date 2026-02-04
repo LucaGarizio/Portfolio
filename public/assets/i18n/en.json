@@ -23,24 +23,24 @@
     "VIEW_DETAILS": "View Details",
     "LINKS_TITLE": "Project Links",
     "PROJECT_1": {
-      "TITLE": "E-commerce Platform",
+      "TITLE": "Placeholder",
       "CATEGORY": "Web App",
-      "DESCRIPTION": "An advanced web application built with modern technologies focusing on performance."
+     "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     "PROJECT_2": {
-      "TITLE": "Analytics Dashboard",
+      "TITLE": "Placeholder",
       "CATEGORY": "Dashboard",
-      "DESCRIPTION": "Real-time data visualization with complex charts and interactive components."
+      "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     "PROJECT_3": {
-      "TITLE": "Portfolio Website",
+      "TITLE": "Placeholder",
       "CATEGORY": "Creative",
-      "DESCRIPTION": "A minimalist portfolio focusing on smooth animations and typography."
+     "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     "PROJECT_4": {
-      "TITLE": "SaaS Platform",
+      "TITLE": "Placeholder",
       "CATEGORY": "Web App",
-      "DESCRIPTION": "Cloud-based solution for project management and team collaboration."
+   "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
     }
   },
   "CONTACT": {

@@ -23,24 +23,24 @@
     "VIEW_DETAILS": "Vedi Dettagli",
     "LINKS_TITLE": "Link Progetto",
     "PROJECT_1": {
-      "TITLE": "Piattaforma E-commerce",
+      "TITLE": "Placeholder",
       "CATEGORY": "Web App",
-      "DESCRIPTION": "Un'applicazione web avanzata costruita con tecnologie moderne focalizzata sulle performance."
+      "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     "PROJECT_2": {
-      "TITLE": "Dashboard Analytics",
+      "TITLE": "Placeholder",
       "CATEGORY": "Dashboard",
-      "DESCRIPTION": "Visualizzazione dati in tempo reale con grafici complessi e componenti interattivi."
+      "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     "PROJECT_3": {
-      "TITLE": "Sito Portfolio",
+      "TITLE": "Placeholder",
       "CATEGORY": "Creative",
-      "DESCRIPTION": "Un portfolio minimalista focalizzato su animazioni fluide e tipografia."
+      "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     "PROJECT_4": {
-      "TITLE": "Piattaforma SaaS",
+      "TITLE": "Placeholder",
       "CATEGORY": "Web App",
-      "DESCRIPTION": "Soluzione basata su cloud per la gestione dei progetti e la collaborazione in team."
+      "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
     }
   },
   "CONTACT": {

@@ -34,7 +34,6 @@ export class Navbar {
   protected readonly isVisible = signal(true);
   protected readonly currentLang = signal('it');
   protected readonly activeSection = signal('hero');
-  protected readonly isLangDropdownOpen = signal(false);
   private lastScrollTop = 0;
   private scrollTimer: any;
 
@@ -83,12 +82,9 @@ export class Navbar {
     if (this.isMenuOpen()) this.isVisible.set(true);
   }
 
-  protected toggleLangDropdown(): void {
-    this.isLangDropdownOpen.update(open => !open);
-  }
+
 
   protected closeMenu(): void {
     this.isMenuOpen.set(false);
-    this.isLangDropdownOpen.set(false);
   }
 }
