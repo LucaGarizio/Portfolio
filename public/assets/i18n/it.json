@@ -21,6 +21,7 @@
   "PROJECTS": {
     "TITLE": "Progetti Recenti",
     "VIEW_DETAILS": "Vedi Dettagli",
+    "LINKS_TITLE": "Link Progetto",
     "PROJECT_1": {
       "TITLE": "Piattaforma E-commerce",
       "CATEGORY": "Web App",
@@ -44,6 +45,7 @@
   },
   "CONTACT": {
     "TITLE": "Contattami",
+    "SUCCESS_TITLE": "Grazie!",
     "SUBTITLE": "Hai un progetto in mente o vuoi semplicemente fare due chiacchiere? <br>Scrivimi pure!",
     "FORM": {
       "NAME": "Nome",
@@ -60,8 +62,8 @@
       "MESSAGE_ERROR": "Scrivi un messaggio di almeno 10 caratteri",
       "SEND": "Invia Messaggio",
       "SENDING": "Inviando...",
-      "SUCCESS": "Messaggio inviato con successo! Ti risponderò al più presto. ✨",
-      "ERROR": "Errore nell'invio. Riprova più tardi o scrivimi direttamente a luca@example.com"
+      "SUCCESS": "Messaggio inviato con successo! Ti risponderò al più presto",
+      "ERROR": "Errore nell'invio. Riprova più tardi o scrivimi direttamente a lucagarizio.devs@gmail.com"
     }
   },
   "FOOTER": {

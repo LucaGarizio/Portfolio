@@ -46,20 +46,26 @@ html {
 }
 
 .reveal {
-  opacity: 0;
-  &.visible {
-    animation: fade-in-up 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 1;
+  @media (min-width: 768px) {
+    opacity: 0;
+    &.visible {
+      animation: fade-in-up 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
   }
 }
 
 .reveal-fade {
-  opacity: 0;
-  &.visible {
-    animation: fade-in 1.5s ease-out forwards;
+  opacity: 1;
+  @media (min-width: 768px) {
+    opacity: 0;
+    &.visible {
+      animation: fade-in 1.5s ease-out forwards;
+    }
   }
 }
 
-/* Stagger Delays */
+
 .delay-100 { animation-delay: 0.1s !important; }
 .delay-200 { animation-delay: 0.2s !important; }
 .delay-300 { animation-delay: 0.3s !important; }
@@ -69,7 +75,7 @@ html {
 .delay-700 { animation-delay: 0.7s !important; }
 .delay-800 { animation-delay: 0.8s !important; }
 .delay-1000 { animation-delay: 1s !important; }
-/* Custom scroll bar hiding */
+
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -86,7 +92,7 @@ html {
 .animate-scroll-hint {
   animation: scroll-hint 3s ease-in-out infinite;
 }
-/* Show only on devices with a mouse/pointer and at least desktop width */
+
 .show-only-desktop-nav {
   display: none !important;
 }

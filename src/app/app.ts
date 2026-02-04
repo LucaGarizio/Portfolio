@@ -8,6 +8,7 @@ import { About } from './components/about/about';
 import { Projects } from './components/projects/projects';
 import { Contact } from './components/contact/contact';
 import { Footer } from './components/footer/footer';
+import { TransitionService } from './services/transition.service';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,8 @@ export class App {
 
   constructor(
     private translate: TranslateService,
-    private titleService: Title
+    private titleService: Title,
+    protected transitionService: TransitionService
   ) {
     const savedLang = localStorage.getItem('preferredLang') || 'it';
     this.translate.setDefaultLang(savedLang);
@@ -35,6 +37,10 @@ export class App {
     if (window.location.hash) {
       history.replaceState(null, '', window.location.pathname);
     }
+
+    setTimeout(() => {
+      this.transitionService.isEntering.set(false);
+    }, 1000);
   }
 
   @HostListener('window:scroll')

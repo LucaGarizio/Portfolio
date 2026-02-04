@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
+import { TransitionService } from '../../services/transition.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,5 +10,6 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './footer.scss',
 })
 export class Footer {
+  protected readonly transitionService = inject(TransitionService);
   protected readonly year = new Date().getFullYear();
 }

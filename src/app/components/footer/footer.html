@@ -4,12 +4,10 @@
       © {{ year }} Luca Garizio. {{ 'FOOTER.RIGHTS' | translate }}
     </div>
     <div class="flex gap-6">
-      <a href="#"
-        class="text-slate-400 hover:text-white transition-colors">LinkedIn</a>
-      <a href="#"
-        class="text-slate-400 hover:text-white transition-colors">GitHub</a>
-      <a href="#"
-        class="text-slate-400 hover:text-white transition-colors">Twitter (X)</a>
+      <button (click)="transitionService.startTransition('https://www.linkedin.com/in/luca-garizio-1839122b8')"
+        class="text-slate-400 hover:text-white transition-colors">LinkedIn</button>
+      <button (click)="transitionService.startTransition('https://github.com/LucaGarizio')"
+        class="text-slate-400 hover:text-white transition-colors">GitHub</button>
     </div>
   </div>
 </footer>

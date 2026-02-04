@@ -1,12 +1,15 @@
 <section id="about"
-  class="pt-8 pb-16 md:py-24 px-4 bg-transparent relative overflow-hidden">
+  class="pt-8 pb-16 md:pt-24 md:pb-24 2xl:pb-40 px-4 bg-transparent relative overflow-hidden">
 
   <div class="max-w-7xl mx-auto relative z-10 px-6">
+    <div class="text-center mb-12 md:mb-20">
+      <h2 appReveal
+        class="reveal text-3xl md:text-5xl font-black text-white mb-8 tracking-tight uppercase">{{ 'ABOUT.TITLE' |
+        translate }}</h2>
+    </div>
+
     <div class="grid md:grid-cols-2 gap-16 items-center">
       <div class="max-w-lg lg:max-w-md w-full justify-self-center lg:justify-self-start text-center md:text-left">
-        <h2 appReveal
-          class="reveal text-3xl md:text-5xl font-black text-white mb-8 tracking-tight uppercase">{{ 'ABOUT.TITLE' |
-          translate }}</h2>
         <div class="space-y-6">
           <p appReveal
             class="reveal delay-100 text-slate-400 text-lg leading-relaxed"
@@ -20,8 +23,7 @@
 
         <div appReveal
           class="reveal delay-300 mt-10 flex flex-wrap gap-3 justify-center md:justify-start">
-          @for (skill of ['Angular', 'TypeScript', 'Tailwind CSS', 'SCSS', 'UX/UI Design', 'Node.js', 'PostgreSQL'];
-          track skill) {
+          @for (skill of skills; track skill) {
           <span
             class="px-5 py-2 bg-white/5 border border-white/10 rounded-full text-sky-400 text-sm font-semibold tracking-wide hover:bg-white/10 transition-colors">
             {{ skill }}
@@ -40,18 +42,11 @@
           class="relative aspect-square rounded-3xl bg-slate-800 border border-white/10 overflow-hidden flex items-center justify-center p-2 shadow-2xl">
           <div
             class="w-full h-full rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center relative group-hover:scale-[1.02] transition-transform duration-500">
-            <div class="absolute inset-0 opacity-10"
-              style="background-image: radial-gradient(rgb(56, 189, 248) 0.5px, transparent 0.5px); background-size: 15px 15px;">
+            <div class="absolute inset-0 opacity-10 bg-accent-dots">
             </div>
             <div class="text-sky-500 font-mono text-sm opacity-50 flex flex-col items-center">
-              <svg class="w-20 h-20 mb-4 opacity-75"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1"
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              <svg class="w-20 h-20 mb-4 opacity-75">
+                <use xlink:href="assets/images/icons.svg#icon-code"></use>
               </svg>
               <span>&lt;LUCA GARIZIO /&gt;</span>
             </div>

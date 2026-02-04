@@ -10,5 +10,5 @@ import { RevealDirective } from '../../directives/reveal.directive';
   styleUrl: './about.scss',
 })
 export class About {
-
+  skills = ['Angular', 'TypeScript', 'Bootstrap', 'Tailwind CSS', 'SCSS', 'UX/UI Design', 'NestJS', 'PostgreSQL', 'PocketBase'];
 }

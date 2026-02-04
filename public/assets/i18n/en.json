@@ -21,6 +21,7 @@
   "PROJECTS": {
     "TITLE": "Recent Projects",
     "VIEW_DETAILS": "View Details",
+    "LINKS_TITLE": "Project Links",
     "PROJECT_1": {
       "TITLE": "E-commerce Platform",
       "CATEGORY": "Web App",
@@ -44,6 +45,7 @@
   },
   "CONTACT": {
     "TITLE": "Contact Me",
+    "SUCCESS_TITLE": "Thank You!",
     "SUBTITLE": "Have a project in mind or just want to chat? <br>Please contact me!",
     "FORM": {
       "NAME": "Name",
@@ -61,7 +63,7 @@
       "SEND": "Send Message",
       "SENDING": "Sending...",
       "SUCCESS": "Message sent successfully! I'll get back to you soon. ✨",
-      "ERROR": "Send error. Please try again later or email me directly at luca@example.com"
+      "ERROR": "Send error. Please try again later or email me directly at lucagarizio.devs@gmail.com"
     }
   },
   "FOOTER": {

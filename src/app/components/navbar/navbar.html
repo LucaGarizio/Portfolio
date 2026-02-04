@@ -6,10 +6,9 @@
         <a href="#"
           (click)="setActiveSection('hero')"
           class="flex items-center group">
-          <img src="assets/images/logo.png"
+          <img src="assets/images/logo/logo.png"
             alt="LG Logo"
-            class="h-12 md:h-16 w-auto transition-all duration-300 group-hover:scale-[1.03] drop-shadow-[0_0_8px_rgba(2,132,199,0.3)] will-change-transform"
-            style="filter: invert(38%) sepia(90%) saturate(2135%) hue-rotate(178deg) brightness(94%) contrast(101%); backface-visibility: hidden;">
+            class="h-12 md:h-16 w-auto transition-all duration-300 group-hover:scale-[1.03] drop-shadow-[0_0_8px_rgba(2,132,199,0.3)] will-change-transform logo-filter">
         </a>
       </div>
       <div class="hidden md:block">
@@ -79,20 +78,11 @@
           (click)="toggleMenu()"
           class="text-slate-400 hover:text-white focus:outline-none transition-colors relative z-[60]">
           <span class="sr-only">Main menu</span>
-          <svg class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
+          <svg class="h-6 w-6">
             @if (isMenuOpen()) {
-            <path stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12" />
+            <use xlink:href="assets/images/icons.svg#icon-close"></use>
             } @else {
-            <path stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7" />
+            <use xlink:href="assets/images/icons.svg#icon-menu"></use>
             }
           </svg>
         </button>

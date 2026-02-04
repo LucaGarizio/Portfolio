@@ -1,0 +1,49 @@
+.bg-dot-pattern {
+  background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.scroll-bar {
+  width: var(--scroll-progress, 0%);
+}
+
+.iris-hole {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150vmax;
+  height: 150vmax;
+  border-radius: 50%;
+  box-shadow: 0 0 0 200vmax #0f172a;
+  z-index: 9999;
+  pointer-events: none;
+  animation: irisClose 0.8s ease-in-out forwards;
+}
+
+.iris-hole-in {
+  @extend .iris-hole;
+  animation: irisOpen 0.8s ease-in-out forwards;
+}
+
+@keyframes irisClose {
+  0% {
+    width: 150vmax;
+    height: 150vmax;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes irisOpen {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 150vmax;
+    height: 150vmax;
+  }
+}
