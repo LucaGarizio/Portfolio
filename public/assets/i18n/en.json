@@ -1,0 +1,70 @@
+{
+  "PAGE_TITLE": "Luca Garizio | Developer Portfolio",
+  "NAVBAR": {
+    "ABOUT": "About",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "TITLE_1": "Creative",
+    "TITLE_2": "Front-End",
+    "TITLE_3": "Developer",
+    "SUBTITLE": "Hi, I'm Luca. I design and develop innovative, fast, and pixel-perfect user interfaces.",
+    "VIEW_PROJECTS": "View Projects",
+    "CONTACT_ME": "Contact Me"
+  },
+  "ABOUT": {
+    "TITLE": "About Me",
+    "P1": "I am a <strong>Front-End Developer</strong> focused on creating elegant, intuitive, and accessible user interfaces.",
+    "P2": "While my primary focus is the client-side, my Full-Stack background allows me to understand and manage the entire application architecture. I love turning complex problems into simple, beautiful, and intuitive designs."
+  },
+  "PROJECTS": {
+    "TITLE": "Recent Projects",
+    "VIEW_DETAILS": "View Details",
+    "PROJECT_1": {
+      "TITLE": "E-commerce Platform",
+      "CATEGORY": "Web App",
+      "DESCRIPTION": "An advanced web application built with modern technologies focusing on performance."
+    },
+    "PROJECT_2": {
+      "TITLE": "Analytics Dashboard",
+      "CATEGORY": "Dashboard",
+      "DESCRIPTION": "Real-time data visualization with complex charts and interactive components."
+    },
+    "PROJECT_3": {
+      "TITLE": "Portfolio Website",
+      "CATEGORY": "Creative",
+      "DESCRIPTION": "A minimalist portfolio focusing on smooth animations and typography."
+    },
+    "PROJECT_4": {
+      "TITLE": "SaaS Platform",
+      "CATEGORY": "Web App",
+      "DESCRIPTION": "Cloud-based solution for project management and team collaboration."
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact Me",
+    "SUBTITLE": "Have a project in mind or just want to chat? <br>Please contact me!",
+    "FORM": {
+      "NAME": "Name",
+      "NAME_PLACEHOLDER": "Elon Musk",
+      "NAME_ERROR": "Please enter your name (at least 2 characters)",
+      "EMAIL": "Email",
+      "EMAIL_PLACEHOLDER": "elon@mars.com",
+      "EMAIL_ERROR": "Please enter a valid email address",
+      "SUBJECT": "Subject",
+      "SUBJECT_PLACEHOLDER": "I'd like to collaborate on a new project",
+      "SUBJECT_ERROR": "Subject is required",
+      "MESSAGE": "Message",
+      "MESSAGE_PLACEHOLDER": "Hi Luca, I have an idea for an app and I'd love to talk to you about it...",
+      "MESSAGE_ERROR": "Please write a message of at least 10 characters",
+      "SEND": "Send Message",
+      "SENDING": "Sending...",
+      "SUCCESS": "Message sent successfully! I'll get back to you soon. ✨",
+      "ERROR": "Send error. Please try again later or email me directly at luca@example.com"
+    }
+  },
+  "FOOTER": {
+    "RIGHTS": "All rights reserved."
+  }
+}

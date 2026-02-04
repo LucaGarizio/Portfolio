@@ -1,0 +1,70 @@
+{
+  "PAGE_TITLE": "Luca Garizio | Portfolio Sviluppatore",
+  "NAVBAR": {
+    "ABOUT": "Chi Sono",
+    "PROJECTS": "Progetti",
+    "CONTACT": "Contatti"
+  },
+  "HERO": {
+    "TITLE_1": "Creative",
+    "TITLE_2": "Front-End",
+    "TITLE_3": "Developer",
+    "SUBTITLE": "Ciao, sono Luca. Progetto e sviluppo interfacce utente innovative, veloci e curate nei minimi dettagli.",
+    "VIEW_PROJECTS": "Vedi Progetti",
+    "CONTACT_ME": "Contattami"
+  },
+  "ABOUT": {
+    "TITLE": "Chi Sono",
+    "P1": "Sono un <strong>Front-End Developer</strong> focalizzato sulla creazione di interfacce utente eleganti, intuitive e accessibili.",
+    "P2": "Sebbene il mio focus principale sia il lato client, il mio background Full-Stack mi permette di comprendere e gestire l'intera architettura delle applicazioni. Amo trasformare problemi complessi in design semplici, belli e intuitivi."
+  },
+  "PROJECTS": {
+    "TITLE": "Progetti Recenti",
+    "VIEW_DETAILS": "Vedi Dettagli",
+    "PROJECT_1": {
+      "TITLE": "Piattaforma E-commerce",
+      "CATEGORY": "Web App",
+      "DESCRIPTION": "Un'applicazione web avanzata costruita con tecnologie moderne focalizzata sulle performance."
+    },
+    "PROJECT_2": {
+      "TITLE": "Dashboard Analytics",
+      "CATEGORY": "Dashboard",
+      "DESCRIPTION": "Visualizzazione dati in tempo reale con grafici complessi e componenti interattivi."
+    },
+    "PROJECT_3": {
+      "TITLE": "Sito Portfolio",
+      "CATEGORY": "Creative",
+      "DESCRIPTION": "Un portfolio minimalista focalizzato su animazioni fluide e tipografia."
+    },
+    "PROJECT_4": {
+      "TITLE": "Piattaforma SaaS",
+      "CATEGORY": "Web App",
+      "DESCRIPTION": "Soluzione basata su cloud per la gestione dei progetti e la collaborazione in team."
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contattami",
+    "SUBTITLE": "Hai un progetto in mente o vuoi semplicemente fare due chiacchiere? <br>Scrivimi pure!",
+    "FORM": {
+      "NAME": "Nome",
+      "NAME_PLACEHOLDER": "Elon Musk",
+      "NAME_ERROR": "Inserisci il tuo nome (almeno 2 caratteri)",
+      "EMAIL": "Email",
+      "EMAIL_PLACEHOLDER": "elon@mars.com",
+      "EMAIL_ERROR": "Inserisci un indirizzo email valido",
+      "SUBJECT": "Oggetto",
+      "SUBJECT_PLACEHOLDER": "Vorrei collaborare a un nuovo progetto",
+      "SUBJECT_ERROR": "L'oggetto è obbligatorio",
+      "MESSAGE": "Messaggio",
+      "MESSAGE_PLACEHOLDER": "Ciao Luca, ho un'idea per un'app e mi piacerebbe parlarne con te...",
+      "MESSAGE_ERROR": "Scrivi un messaggio di almeno 10 caratteri",
+      "SEND": "Invia Messaggio",
+      "SENDING": "Inviando...",
+      "SUCCESS": "Messaggio inviato con successo! Ti risponderò al più presto. ✨",
+      "ERROR": "Errore nell'invio. Riprova più tardi o scrivimi direttamente a luca@example.com"
+    }
+  },
+  "FOOTER": {
+    "RIGHTS": "Tutti i diritti riservati."
+  }
+}
