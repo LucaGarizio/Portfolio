@@ -1,0 +1,113 @@
+<section id="contact"
+  class="py-12 md:py-24 px-4 bg-transparent relative overflow-hidden">
+  <div class="max-w-4xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+      <h2 appReveal
+        class="reveal text-3xl md:text-5xl font-black text-white mb-8 tracking-tight uppercase">{{ 'CONTACT.TITLE' |
+        translate }}</h2>
+      <p appReveal
+        class="reveal delay-200 text-slate-400 text-lg max-w-2xl mx-auto"
+        [innerHTML]="'CONTACT.SUBTITLE' | translate">
+      </p>
+    </div>
+
+    <div appReveal
+      class="reveal delay-400 bg-slate-800/80 backdrop-blur-2xl p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl">
+      <form [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
+        class="space-y-6">
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label for="user_name"
+              class="block text-sm font-medium text-slate-300 ml-1">{{ 'CONTACT.FORM.NAME' | translate }}</label>
+            <input type="text"
+              id="user_name"
+              formControlName="user_name"
+              [attr.placeholder]="'CONTACT.FORM.NAME_PLACEHOLDER' | translate"
+              class="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500 transition-all">
+            @if (contactForm.get('user_name')?.invalid && contactForm.get('user_name')?.touched) {
+            <p class="text-red-400 text-xs mt-1 ml-1 animate-pulse">{{ 'CONTACT.FORM.NAME_ERROR' | translate }}</p>
+            }
+          </div>
+
+          <div class="space-y-2">
+            <label for="user_email"
+              class="block text-sm font-medium text-slate-300 ml-1">{{ 'CONTACT.FORM.EMAIL' | translate }}</label>
+            <input type="email"
+              id="user_email"
+              formControlName="user_email"
+              [attr.placeholder]="'CONTACT.FORM.EMAIL_PLACEHOLDER' | translate"
+              class="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500 transition-all">
+            @if (contactForm.get('user_email')?.invalid && contactForm.get('user_email')?.touched) {
+            <p class="text-red-400 text-xs mt-1 ml-1 animate-pulse">{{ 'CONTACT.FORM.EMAIL_ERROR' | translate }}</p>
+            }
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label for="subject"
+            class="block text-sm font-medium text-slate-300 ml-1">{{ 'CONTACT.FORM.SUBJECT' | translate }}</label>
+          <input type="text"
+            id="subject"
+            formControlName="subject"
+            [attr.placeholder]="'CONTACT.FORM.SUBJECT_PLACEHOLDER' | translate"
+            class="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500 transition-all">
+          @if (contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched) {
+          <p class="text-red-400 text-xs mt-1 ml-1 animate-pulse">{{ 'CONTACT.FORM.SUBJECT_ERROR' | translate }}</p>
+          }
+        </div>
+
+        <div class="space-y-2">
+          <label for="message"
+            class="block text-sm font-medium text-slate-300 ml-1">{{ 'CONTACT.FORM.MESSAGE' | translate }}</label>
+          <textarea id="message"
+            formControlName="message"
+            rows="5"
+            [attr.placeholder]="'CONTACT.FORM.MESSAGE_PLACEHOLDER' | translate"
+            class="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500 transition-all resize-none"></textarea>
+          @if (contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
+          <p class="text-red-400 text-xs mt-1 ml-1 animate-pulse">{{ 'CONTACT.FORM.MESSAGE_ERROR' | translate }}</p>
+          }
+        </div>
+
+        <div class="pt-4">
+          <button type="submit"
+            [disabled]="contactForm.invalid || isSubmitting()"
+            class="w-full bg-sky-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-sky-700/20 active:scale-95 flex items-center justify-center">
+            @if (isSubmitting()) {
+            <svg class="animate-spin h-5 w-5 mr-3 text-white"
+              viewBox="0 0 24 24">
+              <circle class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"></circle>
+              <path class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+              </path>
+            </svg>
+            {{ 'CONTACT.FORM.SENDING' | translate }}
+            } @else {
+            {{ 'CONTACT.FORM.SEND' | translate }}
+            }
+          </button>
+        </div>
+
+
+        @if (submitStatus() === 'success') {
+        <div class="mt-6 p-4 bg-green-500/20 border border-green-500/50 text-green-300 rounded-xl text-center">
+          {{ 'CONTACT.FORM.SUCCESS' | translate }}
+        </div>
+        }
+        @if (submitStatus() === 'error') {
+        <div class="mt-6 p-4 bg-red-500/20 border border-red-500/50 text-red-300 rounded-xl text-center">
+          {{ 'CONTACT.FORM.ERROR' | translate }}
+        </div>
+        }
+      </form>
+    </div>
+  </div>
+</section>
