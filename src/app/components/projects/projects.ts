@@ -32,22 +32,23 @@ export class Projects {
   projectsList: Project[] = [
     {
       id: 1,
-      img: 'https://picsum.photos/500/400',
+      // img: '/assets/images/projects/kennel-dog.png',
+      img: '/assets/images/projects/kennel-project-image.png',
       titleKey: 'PROJECTS.PROJECT_1.TITLE',
       categoryKey: 'PROJECTS.PROJECT_1.CATEGORY',
       descriptionKey: 'PROJECTS.PROJECT_1.DESCRIPTION',
-      tags: ['Angular', 'Tailwind', 'NestJs', 'PostgreSQL'],
+      tags: ['Angular', 'PrimeNG', 'PocketBase'],
       delay: 'delay-200',
-      github: 'https://github.com',
-      demo: 'https://demo.com'
+      github: 'https://github.com/LucaGarizio/demo-kennel-admin-portal',
+      demo: 'https://demo-kennel-admin-portal.vercel.app/'
     },
     {
       id: 2,
-      img: 'https://picsum.photos/300/400',
+      img: '/assets/images/projects/garden-center-logo.png',
       titleKey: 'PROJECTS.PROJECT_2.TITLE',
       categoryKey: 'PROJECTS.PROJECT_2.CATEGORY',
       descriptionKey: 'PROJECTS.PROJECT_2.DESCRIPTION',
-      tags: ['Angular', 'PrimeNG', 'Bootstrap', 'PocketBase'],
+      tags: ['Laravel', 'Vue 3', 'Inertia.js', 'Bootstrap', 'Filament'],
       delay: 'delay-300',
       github: 'https://github.com',
       demo: 'https://demo.com'

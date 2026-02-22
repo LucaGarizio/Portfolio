@@ -23,14 +23,14 @@
     "VIEW_DETAILS": "View Details",
     "LINKS_TITLE": "Project Links",
     "PROJECT_1": {
-      "TITLE": "Placeholder",
+      "TITLE": "Kennel Admin Portal",
       "CATEGORY": "Web App",
-     "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
+     "DESCRIPTION": "A complete management portal for a dog boarding kennel. Features include dog and owner registries, stay management, interactive kennel scheduling, and a 'kiosk' system for digital document signatures."
     },
     "PROJECT_2": {
-      "TITLE": "Placeholder",
-      "CATEGORY": "Dashboard",
-      "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
+      "TITLE": "Forlini Garden Center",
+      "CATEGORY": "Web App / E-commerce",
+      "DESCRIPTION": "E-commerce platform and showcase website for a garden center. Features an interactive product catalog, advanced filtering, cart management, and a dedicated administration panel."
     },
     "PROJECT_3": {
       "TITLE": "Placeholder",
