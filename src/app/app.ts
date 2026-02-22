@@ -41,9 +41,28 @@ export class App {
       history.replaceState(null, '', window.location.pathname);
     }
 
+    this.setViewportHeight();
+
     setTimeout(() => {
       this.transitionService.isEntering.set(false);
     }, 1000);
+  }
+
+  private lastWidth = window.innerWidth;
+
+  private setViewportHeight(): void {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+  @HostListener('window:resize')
+  onResize(): void {
+    // Only update --vh when the width changes (real resize or rotation).
+    // Address bar hide/show only changes height, not width.
+    if (window.innerWidth !== this.lastWidth) {
+      this.lastWidth = window.innerWidth;
+      this.setViewportHeight();
+    }
   }
 
   @HostListener('window:scroll')

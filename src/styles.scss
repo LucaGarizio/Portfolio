@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.vh-stable {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.min-vh-stable {
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
 @layer utilities {
   .animate-float {
     animation: float 6s ease-in-out infinite;
