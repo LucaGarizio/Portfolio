@@ -68,6 +68,19 @@
     }
   },
   "FOOTER": {
-    "RIGHTS": "All rights reserved."
+    "RIGHTS": "All rights reserved.",
+    "PRIVACY": "Privacy Policy"
+  },
+  "COOKIE": {
+    "TITLE": "Cookie Management",
+    "MESSAGE": "I use cookies to improve your experience and analyze traffic anonymously.",
+    "ACCEPT": "Accept",
+    "DECLINE": "Decline",
+    "SETTINGS": "Settings"
+  },
+  "PRIVACY": {
+    "TITLE": "Privacy & Cookie Policy",
+    "CONTENT": "This policy explains how your data is handled when you visit my portfolio.<br><br><strong>Google Analytics</strong><br>I use Google Analytics to collect anonymous statistics about visits. This helps me understand which projects are most appreciated and how to improve the user experience. Data is collected only with your consent.<br><br><strong>Personal Data</strong><br>Data sent through the contact form is used exclusively to respond to you and is not shared with third parties or used for marketing purposes.",
+    "CLOSE": "Close"
   }
 }

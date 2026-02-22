@@ -53,7 +53,6 @@
             </div>
           </div>
 
-          <!-- Full-Height Hover Overlay - Moved outside the text content to cover the entire card -->
           <div
             class="absolute inset-0 bg-slate-900/95 backdrop-blur-md flex flex-col p-6 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 overflow-y-auto">
             
@@ -80,7 +79,6 @@
                   GitHub
                 </button>
                 }
-                <!-- Links logic: Demo exists? If != '' show Live Demo, if == '' show WIP, if not exists show nothing -->
                 @if (project.demo !== undefined && project.demo !== null) {
                   @if (project.demo !== '') {
                   <button (click)="transitionService.startTransition(project.demo)"

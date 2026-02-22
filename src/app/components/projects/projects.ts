@@ -62,9 +62,8 @@ export class Projects {
       delay: 'delay-500',
       github: 'https://github.com/LucaGarizio/Portfolio',
     },
-    {
-     id: 4,
-      // img: '/assets/images/projects/kennel-dog.png',
+     {
+      id: 4,
       img: '/assets/images/projects/kennel-project-image.png',
       titleKey: 'PROJECTS.PROJECT_1.TITLE',
       categoryKey: 'PROJECTS.PROJECT_1.CATEGORY',

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, Output, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { TransitionService } from '../../services/transition.service';
 
@@ -10,6 +10,7 @@ import { TransitionService } from '../../services/transition.service';
   styleUrl: './footer.scss',
 })
 export class Footer {
+  @Output() openPrivacy = new EventEmitter<void>();
   protected readonly transitionService = inject(TransitionService);
   protected readonly year = new Date().getFullYear();
 }

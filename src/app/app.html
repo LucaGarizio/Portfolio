@@ -69,8 +69,14 @@
   </main>
 
   <div class="relative z-10 border-t border-white/5">
-    <app-footer></app-footer>
+  <app-footer (openPrivacy)="showPrivacyModal.set(true)"></app-footer>
   </div>
 </div>
+
+<app-cookie-consent></app-cookie-consent>
+
+@if (showPrivacyModal()) {
+<app-privacy-modal (close)="showPrivacyModal.set(false)"></app-privacy-modal>
+}
 
 <router-outlet />

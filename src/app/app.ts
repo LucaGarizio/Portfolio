@@ -9,17 +9,20 @@ import { Projects } from './components/projects/projects';
 import { Contact } from './components/contact/contact';
 import { Footer } from './components/footer/footer';
 import { TransitionService } from './services/transition.service';
+import { CookieConsent } from './components/cookie-consent/cookie-consent';
+import { PrivacyModal } from './components/privacy-modal/privacy-modal';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Navbar, Hero, About, Projects, Contact, Footer],
+  imports: [RouterOutlet, Navbar, Hero, About, Projects, Contact, Footer, CookieConsent, PrivacyModal],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
   protected readonly title = signal('portfolio');
   protected readonly scrollProgress = signal(0);
+  protected readonly showPrivacyModal = signal(false);
 
   constructor(
     private translate: TranslateService,
