@@ -14,10 +14,6 @@ export class TransitionService {
 
     setTimeout(() => {
       window.open(url, target);
-
-      setTimeout(() => {
-        this.isTransitioning.set(false);
-      }, 1000);
     }, 900);
   }
 }

@@ -22,9 +22,10 @@
     "TITLE": "Progetti Recenti",
     "VIEW_DETAILS": "Vedi Dettagli",
     "LINKS_TITLE": "Link Progetto",
+    "WIP": "Work in Progress",
     "PROJECT_1": {
       "TITLE": "Kennel Admin Portal",
-      "CATEGORY": "Web App",
+      "CATEGORY": "Dashboard",
       "DESCRIPTION": "Un portale gestionale completo per una pensione per cani. Include anagrafica cani e proprietari, gestione dei soggiorni, calendario interattivo per l'occupazione dei box e un sistema 'kiosk' per la firma digitale dei documenti."
     },
     "PROJECT_2": {
@@ -33,14 +34,14 @@
       "DESCRIPTION": "Piattaforma e-commerce e sito vetrina per un vivaio. Offre un catalogo prodotti interattivo, filtri di ricerca avanzati, gestione carrello e un pannello di amministrazione."
     },
     "PROJECT_3": {
-      "TITLE": "Placeholder",
-      "CATEGORY": "Creative",
-      "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
+      "TITLE": "Il Botteghino",
+      "CATEGORY": "Web App / Restaurant",
+      "DESCRIPTION": "Un'applicazione web completa per la gestione di un ristorante. Include un menù digitale interattivo per i clienti, galleria fotografica e sistema di prenotazione tavoli, oltre a un pannello admin per la gestione dei piatti in tempo reale."
     },
     "PROJECT_4": {
-      "TITLE": "Placeholder",
-      "CATEGORY": "Web App",
-      "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
+      "TITLE": "Luca Garizio Portfolio",
+      "CATEGORY": "Web App / Personal",
+      "DESCRIPTION": "Il mio portfolio personale. Sviluppato con Angular e Tailwind CSS, include un sistema multi-lingua dinamico, animazioni moderne e integrazione con EmailJS per la gestione dei contatti."
     }
   },
   "CONTACT": {

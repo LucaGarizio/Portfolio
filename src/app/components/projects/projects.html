@@ -21,7 +21,7 @@
             <img [src]="project.img"
               [alt]="project.titleKey | translate"
               class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-              [class.project-img-logo]="project.id === 2">
+              [class.project-img-logo]="project.id === 1 || project.id === 2 || project.id === 3">
             } @else {
             <div class="w-full h-full bg-slate-700"></div>
             }
@@ -80,14 +80,25 @@
                   GitHub
                 </button>
                 }
-                @if (project.demo) {
-                <button (click)="transitionService.startTransition(project.demo)"
-                  class="w-full py-3 bg-sky-700 hover:bg-sky-600 text-white font-bold flex items-center justify-center gap-2 rounded-xl transition-all shadow-lg shadow-sky-700/20 active:scale-95">
-                  <svg class="w-5 h-5">
-                    <use xlink:href="assets/images/icons.svg#icon-demo"></use>
-                  </svg>
-                  Live Demo
-                </button>
+                <!-- Links logic: Demo exists? If != '' show Live Demo, if == '' show WIP, if not exists show nothing -->
+                @if (project.demo !== undefined && project.demo !== null) {
+                  @if (project.demo !== '') {
+                  <button (click)="transitionService.startTransition(project.demo)"
+                    class="w-full py-3 bg-sky-700 hover:bg-sky-600 text-white font-bold flex items-center justify-center gap-2 rounded-xl transition-all shadow-lg shadow-sky-700/20 active:scale-95">
+                    <svg class="w-5 h-5">
+                      <use xlink:href="assets/images/icons.svg#icon-demo"></use>
+                    </svg>
+                    Live Demo
+                  </button>
+                  } @else {
+                  <div
+                    class="w-full py-3 bg-white/5 border border-white/10 rounded-xl text-slate-500 font-bold flex items-center justify-center gap-2 cursor-not-allowed italic">
+                    <svg class="w-5 h-5 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    {{ 'PROJECTS.WIP' | translate }}
+                  </div>
+                  }
                 }
               </div>
             </div>

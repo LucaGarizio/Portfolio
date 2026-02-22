@@ -22,9 +22,10 @@
     "TITLE": "Recent Projects",
     "VIEW_DETAILS": "View Details",
     "LINKS_TITLE": "Project Links",
+    "WIP": "Work in Progress",
     "PROJECT_1": {
       "TITLE": "Kennel Admin Portal",
-      "CATEGORY": "Web App",
+      "CATEGORY": "Dashboard",
      "DESCRIPTION": "A complete management portal for a dog boarding kennel. Features include dog and owner registries, stay management, interactive kennel scheduling, and a 'kiosk' system for digital document signatures."
     },
     "PROJECT_2": {
@@ -33,14 +34,14 @@
       "DESCRIPTION": "E-commerce platform and showcase website for a garden center. Features an interactive product catalog, advanced filtering, cart management, and a dedicated administration panel."
     },
     "PROJECT_3": {
-      "TITLE": "Placeholder",
-      "CATEGORY": "Creative",
-     "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
+      "TITLE": "Il Botteghino",
+      "CATEGORY": "Web App / Restaurant",
+      "DESCRIPTION": "A comprehensive web application for restaurant management. Features include an interactive digital menu, photo gallery, and table reservation system, along with an admin panel for real-time menu management."
     },
     "PROJECT_4": {
-      "TITLE": "Placeholder",
-      "CATEGORY": "Web App",
-   "DESCRIPTION": "lorem ipsum dolor sit amet consectetur adipisicing elit."
+      "TITLE": "Luca Garizio Portfolio",
+      "CATEGORY": "Web App / Personal",
+      "DESCRIPTION": "My personal portfolio. Built with Angular and Tailwind CSS, featuring a dynamic multi-language system, modern animations, and EmailJS integration for contact management."
     }
   },
   "CONTACT": {

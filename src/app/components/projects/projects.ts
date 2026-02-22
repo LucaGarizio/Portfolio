@@ -30,8 +30,40 @@ export class Projects {
   activeProjectIndex = signal(0);
 
   projectsList: Project[] = [
+    
     {
       id: 1,
+      img: '/assets/images/projects/garden-center-logo.png',
+      titleKey: 'PROJECTS.PROJECT_2.TITLE',
+      categoryKey: 'PROJECTS.PROJECT_2.CATEGORY',
+      descriptionKey: 'PROJECTS.PROJECT_2.DESCRIPTION',
+      tags: ['Laravel', 'Vue 3', 'Inertia.js', 'Bootstrap', 'Filament'],
+      delay: 'delay-300',
+      demo: ''
+    },
+    {
+      id: 2,
+      img: '/assets/images/projects/il-botteghino-logo.png',
+      titleKey: 'PROJECTS.PROJECT_3.TITLE',
+      categoryKey: 'PROJECTS.PROJECT_3.CATEGORY',
+      descriptionKey: 'PROJECTS.PROJECT_3.DESCRIPTION',
+      tags: ['Angular', 'PocketBase', 'Tailwind'],
+      delay: 'delay-400',
+      github: 'https://github.com/LucaGarizio/il-botteghino',
+      demo: ''
+    },
+    {
+      id: 3,
+      img: '/assets/images/logo/logo.png',
+      titleKey: 'PROJECTS.PROJECT_4.TITLE',
+      categoryKey: 'PROJECTS.PROJECT_4.CATEGORY',
+      descriptionKey: 'PROJECTS.PROJECT_4.DESCRIPTION',
+      tags: ['Angular', 'Tailwind', 'NGX-Translate', 'EmailJS'],
+      delay: 'delay-500',
+      github: 'https://github.com/LucaGarizio/Portfolio',
+    },
+    {
+     id: 4,
       // img: '/assets/images/projects/kennel-dog.png',
       img: '/assets/images/projects/kennel-project-image.png',
       titleKey: 'PROJECTS.PROJECT_1.TITLE',
@@ -42,39 +74,6 @@ export class Projects {
       github: 'https://github.com/LucaGarizio/demo-kennel-admin-portal',
       demo: 'https://demo-kennel-admin-portal.vercel.app/'
     },
-    {
-      id: 2,
-      img: '/assets/images/projects/garden-center-logo.png',
-      titleKey: 'PROJECTS.PROJECT_2.TITLE',
-      categoryKey: 'PROJECTS.PROJECT_2.CATEGORY',
-      descriptionKey: 'PROJECTS.PROJECT_2.DESCRIPTION',
-      tags: ['Laravel', 'Vue 3', 'Inertia.js', 'Bootstrap', 'Filament'],
-      delay: 'delay-300',
-      github: 'https://github.com',
-      demo: 'https://demo.com'
-    },
-    {
-      id: 3,
-      img: 'https://picsum.photos/400/400',
-      titleKey: 'PROJECTS.PROJECT_3.TITLE',
-      categoryKey: 'PROJECTS.PROJECT_3.CATEGORY',
-      descriptionKey: 'PROJECTS.PROJECT_3.DESCRIPTION',
-      tags: ['Angular', 'GSAP', 'Tailwind'],
-      delay: 'delay-400',
-      github: 'https://github.com',
-      demo: 'https://demo.com'
-    },
-    {
-      id: 3,
-      img: 'https://picsum.photos/400/500',
-      titleKey: 'PROJECTS.PROJECT_3.TITLE',
-      categoryKey: 'PROJECTS.PROJECT_3.CATEGORY',
-      descriptionKey: 'PROJECTS.PROJECT_3.DESCRIPTION',
-      tags: ['Angular', 'GSAP', 'Tailwind'],
-      delay: 'delay-500',
-      github: 'https://github.com',
-      demo: 'https://demo.com'
-    }
   ];
 
   projectsCenter() {
