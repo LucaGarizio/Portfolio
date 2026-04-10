@@ -39,7 +39,7 @@ export class Projects {
       descriptionKey: 'PROJECTS.PROJECT_2.DESCRIPTION',
       tags: ['Laravel', 'Vue 3', 'Inertia.js', 'Bootstrap', 'Filament'],
       delay: 'delay-300',
-      demo: ''
+      demo: 'https://forlinigarden.it/'
     },
     {
       id: 2,
